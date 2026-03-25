@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
   // Cloudflare Pages 部署阶段会改写 Vite 配置，要求存在 plugins 数组
-  plugins: [],
+  plugins: [cloudflare()],
   base: "./",
   server: {
     port: 5173
@@ -11,4 +13,3 @@ export default defineConfig({
     target: "es2020"
   }
 });
-
