@@ -70,6 +70,12 @@ git push -u origin main
 - Android Chrome：菜单 → 添加到主屏幕  
 - iOS Safari：分享 → 添加到主屏幕
 
+### 华为手机打不开时
+
+1. **优先用 Chrome**（应用市场搜「Chrome」安装），用 Chrome 打开同一链接；自带浏览器若 WebView 较旧，已做 **legacy 兼容**，但仍建议 Chrome。  
+2. **换网络**：Wi‑Fi 与 4G/5G 各试；`*.workers.dev` 在部分运营商下不稳定，可同时试 GitHub Pages 地址。  
+3. 若曾打开过旧版：浏览器里 **清除该站点数据** 后再开。
+
 ## 版权说明
 
 应用不自动抓取受版权保护的小说全文；可提供简介、外链与浏览器搜索。

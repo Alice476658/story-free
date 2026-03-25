@@ -1,14 +1,17 @@
 import { defineConfig } from "vite";
+import legacy from "@vitejs/plugin-legacy";
 
 export default defineConfig({
-  // Cloudflare Pages 部署阶段会改写 Vite 配置，要求存在 plugins 数组
-  plugins: [],
+  // Cloudflare 要求存在 plugins 数组；legacy 包可兼容华为等旧版 WebView
+  plugins: [
+    legacy({
+      targets: ["defaults", "Android >= 8", "iOS >= 12", "Chrome >= 61"],
+      modernPolyfills: true,
+      renderLegacyChunks: true,
+    }),
+  ],
   base: "./",
   server: {
-    port: 5173
+    port: 5173,
   },
-  build: {
-    target: "es2020"
-  }
 });
-
