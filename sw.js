@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 
-const CACHE_NAME = "sfr-cache-v2";
+const CACHE_NAME = "sfr-cache-v3";
 const APP_SHELL = [
   "./",
   "./index.html",

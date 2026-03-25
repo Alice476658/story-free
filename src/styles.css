@@ -15,8 +15,11 @@
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.45);
   --r: 16px;
   --r-sm: 12px;
-  --font-ui: "Outfit", "Noto Sans SC", system-ui, sans-serif;
-  --font-body: "Noto Sans SC", "Outfit", system-ui, sans-serif;
+  /* 系统字体栈：避免依赖墙外 CDN，手机加载更快 */
+  --font-ui: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", sans-serif;
   --space: 16px;
   --space-lg: 24px;
 }
